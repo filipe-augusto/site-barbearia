@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/estilo.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+    <title>Barbearia Pena</title>
+
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+   -->
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+
+
+<!---               -->
+
+  <body  data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!--navbar -->
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark ">
+     
+      <a class="navbar-brand" href="#"><h3 class="logoNav">Barbearia Pena <i class="fas fa-feather-alt fa-2x"></i></h3></a>   
+  
+      <button
+        class="navbar-toggler pull-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="col-md-offset-4 col-sm-12 collapse navbar-collapse " id="navbarSupportedContent">   
+        <ul class="nav navbar-nav  fontnavbar">
+            <li class="nav-item col-sm-2 ">
+              <!-- icones: https://fontawesome.com/icons?d=gallery&q=whats-->
+                <a class="corLiNav  nav-link" href="#"><i class="fas fa-home fa-2x"></i><br>Home </a>
+              </li>
+            <li class="nav-item ">
+                <a class="corLiNav nav-link" href="#servicos"><i class="fas fa-cut fa-2x"></i><br>Serviços </a>
+              </li>
+         
+          <li class="nav-item ">
+            <a class="corLiNav nav-link" href="#quem-somos"><i class="fas fa-feather-alt fa-2x"></i><br>Quem Somos</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="corLiNav nav-link" href="#localizacao"><i class="fas fa-map-marked-alt fa-2x"></i><br>Endereço</a>
+          </li>
+          <li class="nav-item ">
+            <a class="corLiNav nav-link" href="#contato"><i class="fas fa-phone fa-2x"></i><br>Fale conosco</a>
+          </li>
+          <li class="nav-item ">
+            <a class="corLiNav nav-link" href=" login.html"><i class="fas fa-tools fa-2x"></i><br>Painel</a>
+          </li>
+        </ul>
+  
+      </div>
+    </nav>
+    <!--navbar fim-->
+
+    <div class="divslider">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" width="800" src="img/s1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/s2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/s3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!--- SLIDER fim-->
+    <!---  SERVIÇOS -->
+    <section id="servicos" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="page-header">
+              <h1>Serviços <small>Conheça o que fazemos</small></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-sm-4 col-md-4 servicos_item">
+            <img src="img/cortes/foto.jpg" class="img-responsive img-circle " />
+            <h4>Corte de Cabelo</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+              alias, at quasi repudiandae quas voluptatum consequatur quod.
+              Nostrum, deserunt numquam et laborum repudiandae ad facilis iusto.
+              Aperiam omnis molestias iste.
+            </p>
+          </div>
+          <div class=" col-sm-4 col-md-4  servicos_item">
+            <img src="img/cortes/barba-serviços.jpg" class="img-responsive img-circle    " />
+            <h4>Barba</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+              alias, at quasi repudiandae quas voluptatum consequatur quod.
+              Nostrum, deserunt numquam et laborum repudiandae ad facilis iusto.
+              Aperiam omnis molestias iste.
+            </p>
+          </div>
+          <div class=" col-sm-4 col-md-4  servicos_item">
+            <img src="img/cortes/sobrancelha-servicosjpg.jpg" class="img-responsive img-circle   " />
+            <h4>Sobrancelha</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+              alias, at quasi repudiandae quas voluptatum consequatur quod.
+              Nostrum, deserunt numquam et laborum repudiandae ad facilis iusto.
+              Aperiam omnis molestias iste.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-sm-4 col-md-4 servicos_item">
+            <img src="img/cortes/manicure-servicos.jpg" class="img-responsive img-circle " />
+            <h4>Manicure</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+              alias, at quasi repudiandae quas voluptatum consequatur quod.
+              Nostrum, deserunt numquam et laborum repudiandae ad facilis iusto.
+              Aperiam omnis molestias iste.
+            </p>
+          </div>
+          <div class=" col-sm-4 col-md-4  servicos_item">
+            <img src="img/cortes/limpeza-de-pele-servicos.jpg" class="img-responsive img-circle    " />
+            <h4>Limpeza de pele</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+              alias, at quasi repudiandae quas voluptatum consequatur quod.
+              Nostrum, deserunt numquam et laborum repudiandae ad facilis iusto.
+              Aperiam omnis molestias iste.
+            </p>
+          </div>
+          <div class=" col-sm-4 col-md-4  servicos_item">
+            <img src="img/cortes/nariz-e-ouvido-servicos.jpg" class="img-responsive img-circle   " />
+            <h4>Ouvido e Nariz</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+              alias, at quasi repudiandae quas voluptatum consequatur quod.
+              Nostrum, deserunt numquam et laborum repudiandae ad facilis iusto.
+              Aperiam omnis molestias iste.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+    <!--- SERVIÇOS fim-->
+    <!---  QUEM SOMOS -->
+    <section id="quem-somos" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="page-header">
+              <h1>Quem somos <small>Conheça nossa história</small></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 div-quem-somos">
+            <div class="col-sm-8 text-right ">
+              <h4>Texto sobre a empresa</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+                voluptatem saepe rem deleniti officia, sapiente ipsa voluptas
+                magnam obcaecati nemo inventore libero eaque necessitatibus?
+                Totam necessitatibus modi molestiae dignissimos eos?
+              </p>
+            </div>
+            <div class="col-sm-4 ">
+              <img src="img/s1-mini.jpg" class="img-responsive img-circle" />
+            </div>
+          </div>
+          <div class="col-md-6 div-quem-somos">
+            <div class="col-sm-4">
+              <img src="img/s3-mini.jpg" class="img-responsive img-circle" />
+            </div>
+            <div class="col-sm-8">
+              <h4>Missão da empresa</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat et esse, eligendi ab suscipit eius aspernatur animi
+                corporis ea hic sint quia explicabo labore fugit sit distinctio
+                vel nesciunt? Eaque?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="page-header">
+              <h1>Nossa equipe <small></small></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div>
+              <img src="img/funcionarios/funcionario.png" class="img-responsive grayscale" />
+              <h4>Rubinho</h4>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <img src="img/funcionarios/funcionario.png"    class="img-responsive grayscale" />
+              <h4>Nelson Piquet</h4>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <img src="img/funcionarios/funcionario.png" class="img-responsive grayscale" />
+              <h4>Emerson Fittipaldi</h4>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <img src="img/funcionarios/funcionario.png" class="img-responsive grayscale" />
+              <h4>Michael Schumacher</h4>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <!---  QUEM SOMOS fim-->
+    <!---  LOCALIZAÇÃO -->
+    <section id="localizacao" class="divColorida">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="page-header">
+              <h1>Localização <small>Veja onde estamos</small></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <iframe  class="responsivot" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1826.4719047262713!2d-46.63776471651428!3d-23.71370056160427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce45b17e93f125%3A0xcc92ac7229ef0c56!2sR.+Richard+Maier%2C+32-148+-+Eldorado%2C+S%C3%A3o+Paulo+-+SP%2C+04477-020!5e0!3m2!1spt-BR!2sbr!4v1551403687483" width="1150" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---  LOCALIZAÇÃO fim-->
+    <!---  CONTATO -->
+    <br><br><br><br><br><br><br><br><br>
+    <section id="contato" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="page-header">
+              <h1>Contato <small>Fale conosco agora mesmo</small></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row contato">
+          <div class="col-xs-12">
+            <p class="bg-success aviso">
+              Preencha o formulário abaixo para encontrar em contato conosco
+            </p>
+          </div>
+        </div>
+
+        <div class="row contato">
+          <div class="col-xs-12">
+            <form name="frmContato" id="frmContato" method="POST" action="/enviar">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control input-lg"
+                      placeholder="Qual o seu nome?"
+                      name="nome"
+                      required
+                      style="font-size: 20px;"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control input-lg"
+                      placeholder="Qual o seu e-mail?"
+                      name="email"
+                      required
+                      style="font-size: 20px;"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      class="form-control input-lg asdasd"
+                      placeholder="Qual seu telefone?"
+                      name="telefone"
+                      style="font-size: 20px;"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <textarea
+                    class="form-control input-lg asdasd  "
+                    placeholder="Sua mensagem!"
+                    name="mensagem"
+                    required
+                    style="font-size: 20px;"
+                
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="alert alert-success">Envio realizado</div>
+                </div>
+                <div class="col-sm-6">
+                  <button type="submit" class="btn btn-success btn-lg">
+                    Enviar formulario
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---  CONTATO fim-->
+
+    
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4 corfooter">
+
+  <!-- Footer Elements -->
+  <div class="container text-center">
+
+    <!--Grid row-->
+    <div class="row ">
+  
+
+        <div class="col-sm-offset-0 col-xs-12">
+          <i class="fab fa-facebook fa-3x icones-redesSociais" ></i> 
+          <i class="fab fa-youtube fa-3x icones-redesSociais"></i> 
+          <i class="fab fa-whatsapp fa-3x icones-redesSociais"></i> 
+          <i class="fab fa-instagram fa-3x icones-redesSociais"></i> 
+          <i class="fab fa-twitter fa-3x icones-redesSociais"></i> 
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="footer-copyright text-center py-3 corfooter1">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> barbeariapena.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  </body>
+</html>

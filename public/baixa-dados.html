@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dados</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tabela">
+        <tr>
+            <th>nome</th>
+            <th>email</th>
+            <th>telefone</th>
+            <th>mensagem</th>
+        </tr>
+    </table>
+    <script>
+        fetch('/receber').then(function (response) {
+            return response.text()
+        }).then(function (resposne) {
+            const registros = JSON.parse(resposne)
+
+            registros.forEach(function (element) {
+                const {
+                    nome,
+                    email,
+                    telefone,
+                    mensagem
+                } = element
+                criarElemento('tabela', nome, email, telefone, mensagem)
+            })
+        })
+
+
+        function criarElemento(elementoTabela, nome, email, telefone, mensagem) {
+            let tr = document.createElement("tr")
+
+            let td1 = document.createElement("td")
+            let td2 = document.createElement("td")
+            let td3 = document.createElement("td")
+            let td4 = document.createElement("td")
+            tr.appendChild(td1)
+            tr.appendChild(td2)
+            tr.appendChild(td3)
+            tr.appendChild(td4)
+
+            let textNome = document.createTextNode(nome)
+            let textEmail = document.createTextNode(email)
+            let textTelefone = document.createTextNode(telefone)
+            let textMensagem = document.createTextNode(mensagem)
+
+            td1.appendChild(textNome)
+            td2.appendChild(textEmail)
+            td3.appendChild(textTelefone)
+            td4.appendChild(textMensagem)
+            document.getElementById(elementoTabela).appendChild(tr)
+        }
+    </script>
+</body>
+
+</html>
